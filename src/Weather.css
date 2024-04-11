@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+}
+
+.app {
+    background-image: url("./assets/climateigorzhsstock.png");
+    background-size: cover;
+}
+
+.app.warm {
+    background-image: url("./assets/hot-weather.jpg");
+    background-size: cover;
+}
+
+.app.cold {
+    background-image: url("./assets/cold-weather.jpg");
+    background-size: cover;
+}
+
+.app.rain {
+    background-image: url("./assets/rainy-season.jpg");
+    background-size: cover;
+}
+
+main {
+    min-height: 100vh;
+    width: 100%;
+    padding: 5rem;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.75));
+}
+
+.search-box {
+    position: relative;
+    height: 3.5rem;
+    width: 50rem;
+    margin: 0 auto;
+}
+
+.search-box input {
+    width: 100%;
+    height: 100%;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    background-color: rgb(239, 239, 239);
+    border-radius: 10px;
+    appearance: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transition: ease-in 0.2s;
+}
+
+.search-box i {
+    position: absolute;
+    right: 0;
+    top: 28%;
+    padding-right: 1rem;
+    font-size: 1.5rem;
+}
+
+.search-box input:focus {
+    background-color: #d8d8d8;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.location-box .location {
+    color: #fff;
+    font-size: 2.2vw;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 5vw;
+    text-shadow: 3px 3px 20px #9a9a9a, -2px 1px 30px #b1b1b1;
+}
+
+.location-box .date {
+    text-align: center;
+    font-size: 1.5vw;
+    color: #fff;
+}
+
+.weather-box {
+    text-align: center;
+}
+
+.weather-box .temp {
+    position: relative;
+    display: inline-block;
+    margin: 30px auto;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 15px 25px;
+    color: #fff;
+    font-size: 8vw;
+    font-weight: 800;
+
+    text-shadow: 3px 6px rgba(50, 50, 70, 0.2);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.weather-box .weather {
+    color: #fff;
+    font-size: 2.2vw;
+}
